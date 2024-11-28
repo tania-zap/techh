@@ -6,7 +6,7 @@
   --secondary-bg-color: #ffffff;
   --secondary-text-color: #ffffff;
   --hover-color: #003d80;
-  --alt-bg-color: #e1f2fa;
+  --alt-bg-color: #b2e5ff;
   --alt-text-color: #333;
 }
 
@@ -279,4 +279,9 @@ img {
   flex-wrap: wrap;
   padding: 10px;
   gap: 10px;
+}
+
+#theme-toggle {
+  position: relative; /* Щоб кнопка могла переміщуватися */
+  cursor: pointer;
 }
