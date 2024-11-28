@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Зміна кольору при наведенні
         row.addEventListener("mouseover", () => {
-            row.style.backgroundColor = "#f0f8ff"; // Світло-блакитний
+            row.style.backgroundColor = "#b2e5ff"; // Світло-сірий
             row.style.transition = "all 0.3s ease";
 
         });
