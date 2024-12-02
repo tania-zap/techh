@@ -38,25 +38,19 @@ body {
 }
 
 /* Навігація */
-nav {
+.nav {
   text-align: center;
   padding: 10px;
   background-color: var(--primary-color);
-}
-
-nav a {
-  color: var(--secondary-text-color);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav a:active {
-  background-color: var(--hover-color);
+  a {
+    color: var(--secondary-text-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Заголовки */
@@ -66,26 +60,28 @@ h1, h2 {
 }
 
 /* Таблиці */
-table {
+.table-goods {
   margin: 20px auto;
   width: 80%;
   border-collapse: collapse;
   background-color: var(--secondary-bg-color);
-}
-
-th, td {
-  padding: 15px;
-  border: 1px solid var(--alt-bg-color);
-  text-align: center;
-}
-
-th {
-  background-color: var(--primary-color);
-  color: var(--secondary-text-color);
-}
-
-tr:nth-child(even) {
-  background-color: var(--alt-bg-color);
+  .table-goods__tr {
+    .table-goods__tr-td{
+      padding: 15px;
+      border: 1px solid var(--alt-bg-color);
+      text-align: center;
+    }
+    .table-goods__tr-th {
+      background-color: var(--primary-color);
+      color: var(--secondary-text-color);
+      padding: 15px;
+      border: 1px solid var(--alt-bg-color);
+      text-align: center;
+    }
+    &:nth-child(even) {
+      background-color: var(--alt-bg-color);
+    }
+  }
 }
 
 /* Зображення */
