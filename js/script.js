@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Зміна кольору при наведенні
         row.addEventListener("mouseover", () => {
-            row.style.backgroundColor = "#b2e5ff"; // Світло-сірий
+            row.style.backgroundColor = "#b2e5ff"; 
             row.style.transition = "all 0.3s ease";
 
         });
 
         // Повернення до стандартного кольору при втраті фокусу
         row.addEventListener("mouseout", () => {
-            row.style.backgroundColor = ""; // Стандартний
+            row.style.backgroundColor = ""; 
             row.style.transition = "all 0.3s ease";
 
         });
